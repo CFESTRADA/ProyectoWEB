@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'django_roles.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
+        'NAME': 'postgres', #academia #password
         'USER': 'postgres',# Puedes cambiar esto según la ubicación de tu servidor PostgreSQL
         'PASSWORD': '201700704',# Puedes cambiar esto según la ubicación de tu servidor PostgreSQL
         'HOST': 'localhost',  # Puedes cambiar esto según la ubicación de tu servidor PostgreSQL
