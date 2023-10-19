@@ -1,4 +1,4 @@
-<h5>CURSOS EN LOS QUE ESTA INSCRIPTO</h5>
+<h5>CURSOS ASIGNADOS</h5>
 <div class="accordion" id="accordionEvolution">
 	<div class="accordion-item">
 		<h2 class="accordion-header" id="headingOne">
@@ -15,7 +15,7 @@
 								{{ course.name }}
 								<button type="button" class="btn btn-sm btn-warning float-end" data-bs-toggle="modal" data-bs-target="#modalEvolution" onclick="showEvolutionModal(this)" data-course-id="{{ course.id }}">
 									{% if course.status == 'P' %}
-										Consultar Evolución
+										Ver inf. / Consultar notas
 									{% endif %}
 								</button>
 							</li>
@@ -23,7 +23,7 @@
 					</ul>
 				{% else %}
 					<div class="alert alert-warning" role="alert">
-						No hay cursos en progreso en los que se haya inscripto
+						No hay cursos en progreso en los que se haya inscrito
 					</div>
 				{% endif %}
 			</div>
@@ -32,7 +32,7 @@
 <div class="accordion-item">
 	<h2 class="accordion-header" id="headingTwo">
 		<button class="accordion-button collapsed bg-success text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-			CURSOS EN ETAPA DE INSCRIPCION
+			CURSOS EN ETAPA DE ASIGNACION
 		</button>
 	</h2>
 	<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionEvolution">
@@ -44,7 +44,7 @@
 							{{ course.name }}
 							<button type="button" class="btn btn-sm btn-success float-end" data-bs-toggle="modal" data-bs-target="#modalEvolution" onclick="showEvolutionModal(this)" data-course-id="{{ course.id }}">
 								{% if course.status == 'I' %}
-									Consultar Evolución
+										Ver inf. / Consultar notas
 								{% endif %}
 							</button>
 						</li>
@@ -52,7 +52,7 @@
 				</ul>
 			{% else %}
 				<div class="alert alert-success" role="alert">
-					No hay cursos para listar en los que se haya inscripto
+					No hay cursos para listar en los que se haya inscrito
 				</div>
 			{% endif %}
 		</div>
@@ -73,7 +73,7 @@
 						{{ course.name }}
 						<button type="button" class="btn btn-sm btn-danger float-end" data-bs-toggle="modal" data-bs-target="#modalEvolution" onclick="showEvolutionModal(this)" data-course-id="{{ course.id }}">
 							{% if course.status == 'F' %}
-								Consultar Evolución
+									Ver inf. / Consultar notas
 							{% endif %}
 						</button>
 					</li>
@@ -81,7 +81,7 @@
 			</ul>
 		{% else %}
 			<div class="alert alert-danger" role="alert">
-				No hay cursos finalizados para listar en los que se haya inscripto
+				No hay cursos finalizados para listar en los que se haya inscrito
 			</div>
 		{% endif %}
 	</div>
@@ -122,7 +122,7 @@
 				<h6>Profesor: ${data.teacher}</h6>
 				<h6 class="text-center">
 					<span class="badge bg-${data.courseStatus === 'P' ? 'warning text-dark' : data.courseStatus === 'I' ? 'success' : data.courseStatus === 'F' ? 'danger' : ''}">
-						${data.courseStatus === 'P' ? 'CURSO EN PROGRESO' : data.courseStatus === 'I' ? 'EN ETAPA DE INSCRIPCION' : data.courseStatus === 'F' ? 'CURSO FINALIZADO' : ''}
+						${data.courseStatus === 'P' ? 'CURSO EN PROGRESO' : data.courseStatus === 'I' ? 'EN ETAPA DE ASIGNACION' : data.courseStatus === 'F' ? 'CURSO FINALIZADO' : ''}
 					</span>
 				</h6>
 				</h6>
