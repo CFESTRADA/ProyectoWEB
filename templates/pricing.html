@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-4 fw-normal text-body-emphasis">Nuestros Precios</h1>
+            <p class="fs-5 text-body-secondary">Elige el curso que mejor se adapte a tus necesidades y comienza tu experiencia de aprendizaje con Academinet.</p>
+        </div>
+
+        <main>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Curso Básico</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">Q49<small
+                                class="text-body-secondary fw-light">/curso</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Acceso ilimitado al curso seleccionado</li>
+                                <li>Materiales de aprendizaje incluidos</li>
+                                <li>Soporte por correo electrónico</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-primary">Comienza tu curso</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Curso Avanzado</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">Q79<small
+                                class="text-body-secondary fw-light">/curso</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Acceso ilimitado a cursos avanzados</li>
+                                <li>Materiales de aprendizaje avanzados</li>
+                                <li>Soporte prioritario por correo electrónico</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-primary">Comienza tu curso avanzado</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-bg-primary border-primary">
+                            <h4 class="my-0 fw-normal">Curso Empresarial</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">Q99<small
+                                class="text-body-secondary fw-light">/curso</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Acceso para equipos y empresas</li>
+                                <li>Materiales de aprendizaje personalizados</li>
+                                <li>Soporte telefónico y por correo electrónico</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-primary">Contáctanos para cursos empresariales</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        {% include 'action_buttons.html' %}
+    </div>
+{% endblock %}
