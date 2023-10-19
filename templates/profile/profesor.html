@@ -67,7 +67,7 @@
 							{{ course.name }}
 							<a href="{% url 'student_list_mark' course.id %}" class="btn btn-sm btn-danger float-end">
 								{% if course.status == 'F' %}
-									Consultar listado
+									Consultar reporte consolidado del Curso
 								{% endif %}
 								<span class="badge rounded-pill bg-light text-danger">{{ enrollment_count }}</span>
 							</a>
