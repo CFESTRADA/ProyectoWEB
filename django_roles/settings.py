@@ -87,7 +87,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'academia', #academia #password #201700704
         'USER': 'postgres',# Puedes cambiar esto según la ubicación de tu servidor PostgreSQL
-        'PASSWORD': 'password',# Puedes cambiar esto según la ubicación de tu servidor PostgreSQL
+        'PASSWORD': '201700704',# Puedes cambiar esto según la ubicación de tu servidor PostgreSQL
         'HOST': 'localhost',  # Puedes cambiar esto según la ubicación de tu servidor PostgreSQL
         'PORT': '5432',
     }
