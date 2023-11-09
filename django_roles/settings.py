@@ -82,16 +82,11 @@ WSGI_APPLICATION = 'django_roles.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres', #academia #password #201700704
-        'USER': 'postgres',# Puedes cambiar esto según la ubicación de tu servidor PostgreSQL
-        'PASSWORD': 'N0vi3mBre202tres',# Puedes cambiar esto según la ubicación de tu servidor PostgreSQL
-        'HOST': 'academia.ckvzrx4xh566.us-east-2.rds.amazonaws.com',  # Puedes cambiar esto según la ubicación de tu servidor PostgreSQL
-        'PORT': '5432',
-    }
-}
+
+
+
+
+
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
